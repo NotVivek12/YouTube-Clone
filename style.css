@@ -3,25 +3,21 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }
+body {
+    margin: 0;
+}
 .thumbnail {
-    width: 300px;
-    display: block;
+    width: 100%;
 }
 .searchBar {
     display: block;
-}
-.videoPreview {
-    width: 300px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 13px  ;
 }
 .videoTitle {
     margin-top: 0;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 .profilePicture {
     width: 40px;
@@ -41,4 +37,31 @@ p{
 .videoInfoGrid {
     display: grid;
     grid-template-columns: 50px 1fr;
+}
+.videoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+.videoAuthor:hover {
+    cursor: pointer;
+}
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftSection {
+    width: 150px;
+}
+.middleSection {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.rightSection {
+    width: 200px;
 }
