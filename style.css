@@ -258,3 +258,10 @@ body {
 .youtubeAppsIconContainer:hover .tooltip{
     opacity: 1;
 }
+.uplaodIcon,
+.youtubeAppsIcon,
+.notificationIcon,
+.youtubeLogo,
+.hamburgerMenu {
+    cursor: pointer;
+}
