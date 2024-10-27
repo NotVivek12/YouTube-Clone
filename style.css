@@ -6,6 +6,7 @@ p{
 body {
     margin: 0;
     padding-top: 80px;
+    padding-left: 80px;
 }
 .thumbnail {
     width: 100%;
@@ -23,6 +24,22 @@ body {
 }
 .thumbnailRow {
     margin-bottom: 12px;
+    position: relative;
+}
+.videoTime {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-radius: 2px;
 }
 .videoAuthor,
 .videoStats {
@@ -58,6 +75,7 @@ body {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(229, 229, 229);
+    z-index: 1;
 }
 .leftSection {
     display: flex;
@@ -134,4 +152,30 @@ body {
 .currentProfileIcon {
     height: 32px;
     border-radius: 16px;
+}
+.sideBar {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+}
+.notificationIconContainer {
+    position: relative;
+}
+.notificationCount {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
 }
